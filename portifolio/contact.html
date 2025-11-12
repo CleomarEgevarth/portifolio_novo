@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cleomar Egevarth</title>
+    <link rel="icon" type="image/png" href="../imagens/logo.png">
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- CSS exclusivo do contato -->
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Canvas Matrix -->
+    <canvas id="matrix"></canvas>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../imagens/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="work.html">Projetos</a>
+            <a href="about.html">Sobre</a>
+            <a href="contact.html" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 40vh;">
+        <h1>Entre em Contato</h1>
+        <p>Gostaria de conversar sobre um projeto ou parceria? Envie sua mensagem 👇</p>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="contact">
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="from_name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="from_email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Redes Sociais -->
+    <section class="socials">
+        <h2>Ou me encontre nas redes</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/cleomar_egevarth" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/CleomarEgevarth" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/54981192428" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/cleomar-egevarth" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- Bolinha do mouse -->
+    <div class="cursor"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Cleomar Egevarth. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/scripts.js"></script>
+
+</body>
+</html>
